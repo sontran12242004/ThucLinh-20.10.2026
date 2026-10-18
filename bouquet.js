@@ -72,9 +72,9 @@ css.textContent = `
 .bq-title{position:absolute;top:5%;width:100%;text-align:center;pointer-events:none;color:#ffe3ee;text-shadow:0 0 24px #ff7fb355;z-index:9}
 .bq-title h2{font:400 clamp(30px,5vw,54px) 'Great Vibes',cursive;margin:0}
 .bq-title p{font:12px Arial,sans-serif;letter-spacing:3px;color:#d9a7bc;margin:8px 0 0;animation:bq-pulse 2.4s ease-in-out infinite}
-.bq-count{position:absolute;bottom:24px;width:100%;text-align:center;pointer-events:none;font:13px Georgia,serif;color:#e7b7cb;letter-spacing:2px;z-index:9}
+.bq-count{position:absolute;bottom:24px;width:100%;text-align:center;pointer-events:none;font:13px 'Playfair Display',Georgia,serif;color:#e7b7cb;letter-spacing:2px;z-index:9}
 .bq-count i{font-style:normal;display:inline-block;margin:0 4px;color:#5a3a4b;transition:color .5s,text-shadow .5s}.bq-count i.on{color:#ff9cc3;text-shadow:0 0 10px #ff6fa8}
-.bq-load{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:#e7b7cb;font:13px Georgia,serif;letter-spacing:2px;pointer-events:none;transition:opacity .6s}
+.bq-load{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;color:#e7b7cb;font:13px 'Playfair Display',Georgia,serif;letter-spacing:2px;pointer-events:none;transition:opacity .6s}
 .bq-load b{display:block;width:180px;height:3px;border-radius:3px;background:#ffffff1f;margin:12px auto 0;overflow:hidden}.bq-load b i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff9cc3,#ffd3e5);transition:width .2s}
 @keyframes bq-pulse{50%{opacity:.4}}
 .bq-dot{position:absolute;z-index:7;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;pointer-events:none;border:2px solid #ffd3e5;box-shadow:0 0 12px #ff8fbd;animation:bq-ring 1.8s ease-out infinite;transition:opacity .4s}
@@ -165,7 +165,14 @@ async function init() {
     const z = Math.max(halfH * 1.25 / t, halfW * 1.3 / (t * camera.aspect));
     camera.position.set(0, halfH * .08, z); camera.lookAt(0, 0, 0); camera.updateProjectionMatrix(); sizeCards();
   }
-  function sizeCards() { const hh = Math.min(innerHeight * .34, 300) + 'px'; cards.forEach(c => c.querySelector('img').style.setProperty('--h', hh)); }
+  function sizeCards() {
+    // ảnh cao hơn đường kính bông hoa trên màn hình một chút (~1.5 lần)
+    const p = new THREE.Vector3(); hits[0].getWorldPosition(p);
+    const a = p.clone().project(camera), b = p.clone().add(new THREE.Vector3(radiusBase, 0, 0)).project(camera);
+    const diameter = Math.abs(b.x - a.x) * wrap.clientWidth;
+    const hh = Math.max(90, Math.min(diameter * 1.5, innerHeight * .34)) + 'px';
+    cards.forEach(c => c.querySelector('img').style.setProperty('--h', hh));
+  }
   addEventListener('resize', resize); resize();
 
   const ray = new THREE.Raycaster(), ptr = new THREE.Vector2(), v3 = new THREE.Vector3();

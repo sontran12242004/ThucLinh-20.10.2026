@@ -84,8 +84,6 @@ css.textContent = `
 .bq-card.open{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .bq-card:before{content:'';position:absolute;left:50%;top:50%;width:170%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#ff8fbd66,#b04a9a1c 48%,transparent 68%);z-index:-1;pointer-events:none}
 .bq-card img{display:block;height:var(--h,300px);width:auto;max-width:60vw;filter:drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1px #fff) drop-shadow(0 10px 20px #000a);user-select:none;-webkit-user-drag:none}
-.bq-x{position:absolute;right:-4px;top:-4px;width:24px;height:24px;border-radius:50%;border:1px solid #ffffff55;background:#241523d9;color:#ffd3e5;font:14px/22px Arial,sans-serif;text-align:center;cursor:pointer;padding:0}
-.bq-x:hover{background:#5a2a49}
 .bq-heart{position:absolute;color:#ff9cc3;pointer-events:none;animation:bq-float 2.4s ease-in infinite;opacity:0}
 @keyframes bq-float{0%{opacity:0;transform:translateY(0) scale(.6)}20%{opacity:.9}100%{opacity:0;transform:translateY(-100px) scale(1.2)}}
 `;
@@ -99,9 +97,8 @@ const loadBox = wrap.querySelector('.bq-load'), loadBar = loadBox.querySelector(
 /* mỗi bông có 1 tấm ảnh riêng, mở rồi thì ở lại tại chỗ */
 const cards = SRC.map((_, i) => {
   const el = document.createElement('div'); el.className = 'bq-card';
-  el.innerHTML = '<img alt="Ảnh kỷ niệm" draggable="false"><button class="bq-x" aria-label="Đóng ảnh">×</button>';
+  el.innerHTML = '<img alt="Ảnh kỷ niệm" draggable="false">';
   wrap.append(el);
-  el.querySelector('.bq-x').addEventListener('click', e => { e.stopPropagation(); el.classList.remove('open'); });
   el.addEventListener('pointerdown', () => { el.style.zIndex = ++zTop; });
   return el;
 });

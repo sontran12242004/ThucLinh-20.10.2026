@@ -8,11 +8,11 @@ import { MeshoptDecoder } from 'https://unpkg.com/three@0.160.0/examples/jsm/lib
 const stage = document.querySelector('#stage');
 const MODEL = 'assets/source/Meshy_AI_Soft_Pink_Rose_Bouque_1018142958_texture.glb';
 const SRC = [
-  'assets/source/Screenshot 2026-10-18 210956.png',
-  'assets/source/Screenshot 2026-10-18 211001.png',
-  'assets/source/Screenshot 2026-10-18 211008.png',
-  'assets/source/Screenshot 2026-10-18 211014.png',
-  'assets/source/Screenshot 2026-10-18 211017.png'
+  'assets/source/Screenshot 2026-10-19 210054.png?v=2',
+  'assets/source/Screenshot 2026-10-19 210105.png?v=2',
+  'assets/source/Screenshot 2026-10-19 210108.png?v=2',
+  'assets/source/Screenshot 2026-10-19 210113.png?v=2',
+  'assets/source/Screenshot 2026-10-19 210116.png?v=2'
 ];
 /* Vị trí 5 bông hồng theo tỉ lệ khung model nhìn từ phía trước:
    x = 0 (trái) → 1 (phải), y = 0 (đỉnh) → 1 (đáy). Chỉnh ở đây nếu điểm bấm lệch hoa.
@@ -163,11 +163,11 @@ async function init() {
     camera.position.set(0, halfH * .08, z); camera.lookAt(0, 0, 0); camera.updateProjectionMatrix(); sizeCards();
   }
   function sizeCards() {
-    // ảnh cao hơn đường kính bông hoa trên màn hình một chút (~1.5 lần)
+    // ảnh có kích thước cỡ đúng bông hoa trên màn hình (~1 lần đường kính)
     const p = new THREE.Vector3(); hits[0].getWorldPosition(p);
     const a = p.clone().project(camera), b = p.clone().add(new THREE.Vector3(radiusBase, 0, 0)).project(camera);
     const diameter = Math.abs(b.x - a.x) * wrap.clientWidth;
-    const hh = Math.max(90, Math.min(diameter * 1.5, innerHeight * .34)) + 'px';
+    const hh = Math.max(60, Math.min(diameter * 1.0, innerHeight * .22)) + 'px';
     cards.forEach(c => c.querySelector('img').style.setProperty('--h', hh));
   }
   addEventListener('resize', resize); resize();

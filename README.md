@@ -1,25 +1,25 @@
-# 💐 VoThiNgocHuyen-20.10.2026
-### Gửi em · 20/10 — Quà tặng Võ Thị Ngọc Huyền
+﻿# 💐 ThucLinh-20.10.2026
+### Gửi em · 20/10 — Quà tặng Thục Linh
 
-> Một website nhỏ, làm bằng cả tấm lòng, gửi tặng **Võ Thị Ngọc Huyền** nhân ngày Phụ nữ Việt Nam 20/10.
+> Một website nhỏ, làm bằng cả tấm lòng, gửi tặng **Thục Linh** nhân ngày Phụ nữ Việt Nam 20/10.
 
 ## Thông tin tác giả & người nhận
 
 | | |
 |---|---|
 | **Tác giả (Author)** | **Trần Đình Sơn** |
-| **Người nhận (Dedicated to)** | **Võ Thị Ngọc Huyền** |
+| **Người nhận (Dedicated to)** | **Thục Linh** |
 | **Dịp tặng** | Ngày Phụ nữ Việt Nam 20/10 |
 | **Loại sản phẩm** | Website tĩnh (HTML / CSS / JavaScript), món quà tinh thần cá nhân hoá |
 
-Toàn bộ ý tưởng, kịch bản, lời chúc, cách sắp xếp ảnh kỷ niệm và việc tích hợp các hiệu ứng trong project này do **Trần Đình Sơn** thực hiện, với mục đích duy nhất là làm một món quà dành riêng cho **Võ Thị Ngọc Huyền**.
+Toàn bộ ý tưởng, kịch bản, lời chúc, cách sắp xếp ảnh kỷ niệm và việc tích hợp các hiệu ứng trong project này do **Trần Đình Sơn** thực hiện, với mục đích duy nhất là làm một món quà dành riêng cho **Thục Linh**.
 
 Các dấu hiệu nhận diện trong chính sản phẩm:
-- Phong thư mở đầu ghi *"Gửi người anh thương — Ngọc Huyền"*, con dấu sáp chữ **H** (Huyền), thư viết *"Và luôn được yêu thương, Huyền nhé."*
-- Ảnh kỷ niệm trong trái tim ảnh 3D và bó hoa chính là ảnh của **Võ Thị Ngọc Huyền**.
-- Lời chúc ở cảnh hoa hồng viết riêng cho Huyền (xem `heart-wish.js`).
+- Phong thư mở đầu ghi *"Gửi người anh thương — Thục Linh"*, con dấu sáp, thư viết *"Và luôn được yêu thương, Linh nhé."*
+- Ảnh kỷ niệm trong trái tim ảnh 3D và bó hoa chính là ảnh của **Thục Linh**.
+- Lời chúc ở cảnh hoa hồng viết riêng cho Linh (xem `heart-wish.js`).
 
-> Project này **không phải sản phẩm thương mại** và **không được dùng lại ảnh cá nhân** của Ngọc Huyền cho mục đích khác khi chưa có sự đồng ý của người trong ảnh.
+> Project này **không phải sản phẩm thương mại** và **không được dùng lại ảnh cá nhân** của Thục Linh cho mục đích khác khi chưa có sự đồng ý của người trong ảnh.
 
 ## Chạy local
 Giải nén, mở terminal trong thư mục chứa index.html:
@@ -44,7 +44,7 @@ Phong thư → hoa bung → trái tim ảnh 3D → hoa hồng 3D và lời chúc
 - star-rose.js: hoa hồng từ 28.000 hạt theo model, nghiêng 45°, xoay 360°.
 - heart-wish.js: lời chúc bằng hạt trái tim, tự căn chữ theo màn hình.
 - bouquet.js: cảnh bó hoa 3D, nạp model GLB, cắt nền ảnh và hiển thị ảnh tại bông hoa được bấm.
-- assets/photos/: 26 ảnh và photos.json.
+- assets/photos/: 35 ảnh và photos.json.
 - assets/source/: model bó hoa `.glb` (tạo bằng Meshy AI từ ảnh bó hoa) và 5 ảnh cắt sẵn.
 - assets/rose-surface.bin, rose-normals.bin: vị trí và hướng bề mặt lấy từ model.
 - assets/fonts/: Great Vibes và thông tin giấy phép.
@@ -58,9 +58,10 @@ Phong thư → hoa bung → trái tim ảnh 3D → hoa hồng 3D và lời chúc
 
 ## Ghi công & giấy phép
 - **Tác giả website, ý tưởng, lời chúc, tích hợp:** Trần Đình Sơn.
-- **Người nhận:** Võ Thị Ngọc Huyền.
+- **Người nhận:** Thục Linh.
 - Model "Rose Scan" của Bandit, CC BY 4.0, đã chuyển thể thành hạt và bỏ cuống.
 - Model bó hoa GLB được tạo bằng Meshy AI từ ảnh bó hoa tham khảo.
 - Thư viện: [Three.js](https://threejs.org/) (MIT). Font: Great Vibes (OFL, xem assets/fonts/).
 
-© Trần Đình Sơn — Made with love for Võ Thị Ngọc Huyền, 20/10.
+© Trần Đình Sơn — Made with love for Thục Linh, 20/10.
+

@@ -1,18 +1,19 @@
-﻿# 💐 ThucLinh-20.10.2026
+# 💐 ThucLinh-20.10.2026
 ### Gửi em · 20/10 — Quà tặng Thục Linh
 
-> Một website nhỏ, làm bằng cả tấm lòng, gửi tặng **Thục Linh** nhân ngày Phụ nữ Việt Nam 20/10.
+> Một website nhỏ, làm bằng cả tấm lòng, do **Nguyễn Minh Hiếu** đặt làm (order) và gửi tặng **Thục Linh** nhân ngày Phụ nữ Việt Nam 20/10.
 
 ## Thông tin tác giả & người nhận
 
 | | |
 |---|---|
 | **Tác giả (Author)** | **Trần Đình Sơn** |
+| **Người order / Người gửi tặng** | **Nguyễn Minh Hiếu** |
 | **Người nhận (Dedicated to)** | **Thục Linh** |
 | **Dịp tặng** | Ngày Phụ nữ Việt Nam 20/10 |
 | **Loại sản phẩm** | Website tĩnh (HTML / CSS / JavaScript), món quà tinh thần cá nhân hoá |
 
-Toàn bộ ý tưởng, kịch bản, lời chúc, cách sắp xếp ảnh kỷ niệm và việc tích hợp các hiệu ứng trong project này do **Trần Đình Sơn** thực hiện, với mục đích duy nhất là làm một món quà dành riêng cho **Thục Linh**.
+Toàn bộ ý tưởng, kịch bản, lời chúc, cách sắp xếp ảnh kỷ niệm và việc tích hợp các hiệu ứng trong project này do **Trần Đình Sơn** thực hiện, theo yêu cầu đặt làm của **Nguyễn Minh Hiếu**, với mục đích duy nhất là làm một món quà để Hiếu gửi tặng riêng cho **Thục Linh**.
 
 Các dấu hiệu nhận diện trong chính sản phẩm:
 - Phong thư mở đầu ghi *"Gửi người anh thương — Thục Linh"*, con dấu sáp, thư viết *"Và luôn được yêu thương, Linh nhé."*
@@ -58,10 +59,11 @@ Phong thư → hoa bung → trái tim ảnh 3D → hoa hồng 3D và lời chúc
 
 ## Ghi công & giấy phép
 - **Tác giả website, ý tưởng, lời chúc, tích hợp:** Trần Đình Sơn.
+- **Người order & gửi tặng:** Nguyễn Minh Hiếu.
 - **Người nhận:** Thục Linh.
 - Model "Rose Scan" của Bandit, CC BY 4.0, đã chuyển thể thành hạt và bỏ cuống.
 - Model bó hoa GLB được tạo bằng Meshy AI từ ảnh bó hoa tham khảo.
 - Thư viện: [Three.js](https://threejs.org/) (MIT). Font: Great Vibes (OFL, xem assets/fonts/).
 
-© Trần Đình Sơn — Made with love for Thục Linh, 20/10.
+© Trần Đình Sơn — Made with love, ordered by Nguyễn Minh Hiếu for Thục Linh, 20/10.
 
